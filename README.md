@@ -8,7 +8,7 @@ Ansible Vault is a feature of ansible that allows you to keep sensitive data suc
 ### Example File: 
 * var_name.yml
 
-[img](images/vault3.PNG)
+![img](images/vault3.PNG)
 
 ### Encryption:
 In order to encrypt the file var_name.yml , we can run the following command:
@@ -17,11 +17,11 @@ In order to encrypt the file var_name.yml , we can run the following command:
 
 You will be prompted to enter a new password and confirm it. This is the password you will use for all the further steps.
 
-[img](images/vault4.PNG)
+![img](images/vault4.PNG)
 
 You can try opening the file now and you will see something like this:
 
-[img](images/vault5.PNG)
+![img](images/vault5.PNG)
 
 ### Edit:
 In order to edit an encrypted file var_name.yml , we can run the following command:
@@ -30,7 +30,7 @@ In order to edit an encrypted file var_name.yml , we can run the following comma
 
 This will prompt us for the password we entered while encrypting the file:
 
-[img](images/vault6.PNG)
+![img](images/vault6.PNG)
 
 ### Decryption:
 In order to decrypt the file var_name.yml , we can run the following command:
@@ -43,7 +43,7 @@ This will prompt us for the password we entered while encrypting the file. Once 
 
 If we directly try to run a playbook which requires an encrypted file, we will get an error message:
 
-[img](images/vault7.PNG)
+![img](images/vault7.PNG)
 
 You can run the playbook site.yml by:
 
@@ -53,7 +53,7 @@ You can run the playbook site.yml by:
 
     This is prompt you for the password like before.
     
-    [img](images/vault8.PNG)
+    ![img](images/vault8.PNG)
 
 2. Pass in a password file which contains the password stored as one line in a new file. 
     
@@ -63,14 +63,14 @@ You can run the playbook site.yml by:
 
     Next add the password entered above as a single line in the file.
 
-    [img](images/vault9.PNG)
+    ![img](images/vault9.PNG)
     
     Now run the command,
 
     ```ansible-playbook site.yml -i inv --vault-password-file /path/to/my/vault-password-file```
 
-    [img](images/vault10.PNG)
-    
+    ![img](images/vault10.PNG)
+
     You can also set ANSIBLE_VAULT_PASSWORD_FILE environment variable
     ```ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt```
     Ansible will automatically search for the password in that file.
