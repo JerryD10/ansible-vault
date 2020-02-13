@@ -35,7 +35,9 @@ This will prompt us for the password we entered while encrypting the file:
 ### Decryption:
 In order to decrypt the file `var_name.yml` , we can run the following command:
 
-```ansible-vault decrypt var_name.yml```
+```
+ansible-vault decrypt var_name.yml
+```
 
 This will prompt us for the password we entered while encrypting the file. Once we enter the correct password, it will convert the file back to plaintext.
 
