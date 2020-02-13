@@ -11,7 +11,7 @@ Ansible Vault is a feature of ansible that allows you to keep sensitive data suc
 ![img](images/vault3.PNG)
 
 ### Encryption:
-In order to encrypt the file var_name.yml , we can run the following command:
+In order to encrypt the file `var_name.yml` , we can run the following command:
 
 ```ansible-vault encrypt var_name.yml```
 
@@ -24,7 +24,7 @@ You can try opening the file now and you will see something like this:
 ![img](images/vault5.PNG)
 
 ### Edit:
-In order to edit an encrypted file var_name.yml , we can run the following command:
+In order to edit an encrypted file `var_name.yml` , we can run the following command:
 
 ```ansible-vault edit var_name.yml```
 
@@ -33,7 +33,7 @@ This will prompt us for the password we entered while encrypting the file:
 ![img](images/vault6.PNG)
 
 ### Decryption:
-In order to decrypt the file var_name.yml , we can run the following command:
+In order to decrypt the file `var_name.yml` , we can run the following command:
 
 ```ansible-vault decrypt var_name.yml```
 
@@ -45,7 +45,7 @@ If we directly try to run a playbook which requires an encrypted file, we will g
 
 ![img](images/vault7.PNG)
 
-You can run the playbook site.yml by:
+You can run the playbook `site.yml` by:
 
 1. Prompt for an interactive password: 
 
