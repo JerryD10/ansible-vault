@@ -1,6 +1,6 @@
 # ansible-vault
 
-Reference: [Ansible-Vault-Docs]((https://docs.ansible.com/ansible/latest/user_guide/vault.html)
+Reference: [Ansible-Vault-Docs](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
 
 Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles.
 
