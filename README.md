@@ -9,7 +9,7 @@ Ansible Vault is a feature of ansible that allows you to keep sensitive data suc
 * In order to get started, we need to set up our two VMs as given in the [CM workshop](https://github.com/CSC-DevOps/CM).
 
 ## Sample Playbook
-The sample playbook consists of a few roles to install maven and git, create a directory and a file, and copy this from to the remote server. There are three variables files that are used.
+The sample playbook consists of a few roles to install maven and git, create a directory and a file, and copy this to the remote server. There are three variables files that are used.
 
 To run the plays,
 
@@ -95,7 +95,7 @@ You can run the playbook by:
     sudo ansible-playbook playbook.yml -i inventory --ask-vault-pass
     ```
 
-    This is prompt you for the password like before.
+    This will prompt you for the password like before.
     
     Once you enter the correct password, it will decrypt all the files that were encrypted and execute the plays.
 
