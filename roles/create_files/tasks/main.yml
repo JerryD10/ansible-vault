@@ -1,0 +1,13 @@
+---
+- name: Create a directory if it does not exist
+  file:
+    path: /{{ directory_name }}
+    state: directory
+- name: Create a file with text
+  file:
+    path: /{{ directory_name }}/{{ file_name }}
+    state: touch
+- name: Add a line to a file
+  lineinfile:
+    path: /{{ directory_name }}/{{ file_name }}
+    line: '{{ line_to_add }}'

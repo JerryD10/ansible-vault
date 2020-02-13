@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: false
+  become: yes
+  become_user: root
+  vars_files:
+    - variables.yml
+  roles:
+    - install_sw
+    - create_files
+    - copy_files
+    

@@ -1,0 +1,6 @@
+---
+- name: Copy file to remote
+  copy:
+    src: /{{ directory_name }}/{{ file_name }}
+    dest: /{{ destination }}
+    remote_src: yes

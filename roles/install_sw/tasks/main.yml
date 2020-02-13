@@ -1,0 +1,14 @@
+---
+- name: update cache
+  apt:
+    update_cache: yes
+    upgrade: yes
+    cache_valid_time: 86400
+- name : Install Maven
+  apt :
+    name : maven
+    state : present
+- name : Install Git
+  apt :
+    name : git
+    state : present 
